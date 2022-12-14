@@ -8,16 +8,21 @@ class PrimeFactors
     public function generate($int)
     {
         $factors = [];
+        $divisor = 2;
 
         // 1. Is the number divisible by 2?
         // 2. If true, then divide by 2. If false, increase prime number candidate
         //    and try again.
         // 3. Repeat.
 
-        while ($int % 2 === 0) {
-            $factors[] = 2;
+        while ($int > 1) {
+            while ($int % $divisor === 0) {
+                $factors[] = $divisor;
 
-            $int = $int / 2;
+                $int = $int / $divisor;
+            }
+
+            $divisor++;
         }
 
         return $factors;
