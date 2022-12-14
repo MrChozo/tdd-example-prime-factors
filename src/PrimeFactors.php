@@ -8,16 +8,11 @@ class PrimeFactors
     public function generate($int)
     {
         $factors = [];
-        $divisor = 2;
 
-        while ($int > 1) {
-            while ($int % $divisor === 0) {
+        for ($divisor = 2; $int > 1; $divisor++) {
+            for (; $int % $divisor === 0; $int /= $divisor) {
                 $factors[] = $divisor;
-
-                $int = $int / $divisor;
             }
-
-            $divisor++;
         }
 
         return $factors;
