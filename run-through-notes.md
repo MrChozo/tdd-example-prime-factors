@@ -18,11 +18,11 @@
 4. All tests should now pass
 5. Refactor as needed, using tests after each refactor to ensure that 
    functionality is preserved
-        i. moving code to where it most logically belongs
-        ii. removing duplicate code
-        iii. making names self-documenting
-        iv. splitting methods into smaller pieces
-        v. re-arranging inheritance hierarchies
+   1. moving code to where it most logically belongs
+   2. removing duplicate code
+   3. making names self-documenting
+   4. splitting methods into smaller pieces
+   5. re-arranging inheritance hierarchies
 6. Repeat
 
 
