@@ -41,7 +41,7 @@
 * what's a prime factor?
 * prime numbers: divisible only by itself and 1
 * 2, 3, 5, 7, 11, 13, 17, 19, 23...
-* prime factors are the prime numbers that go into a non-prime
+* prime factors are the prime numbers that make up a non-prime number
 * 8 -> 2, 2, 2  by doing:
   * 8 = 2 * 4
   * 8 = 2 * 2 * 2
