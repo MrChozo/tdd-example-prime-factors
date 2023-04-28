@@ -8,7 +8,7 @@ class PrimeFactorsTest extends TestCase
 {
     /**
      * @test
-     * @dataProvider factors
+     * @dataProvider factors_to_generate
      */
     public function it_generates_prime_factors_for_n($int, $expected)
     {
@@ -17,7 +17,7 @@ class PrimeFactorsTest extends TestCase
         $this->assertEquals($expected, $factors->generate($int));
     }
 
-    public function factors()
+    public function factors_to_generate()
     {
         return [
             [ 1,   []            ],
